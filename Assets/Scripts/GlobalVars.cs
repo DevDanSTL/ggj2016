@@ -43,8 +43,8 @@ public int ClericHP = 100;
 public int ClericAggro = 0;
 
 // Warrior Vars
-public int WarriorHP = 200;
-public int WarriorAtk = 20;
+static public SharedInt WarriorHP;
+static public int WarriorAtk = 20;
 public float OppMod = 1.5f;
 public bool OppAtk = false;
 public bool PShielded = false;
@@ -54,6 +54,9 @@ public int WarriorAggro = 0;
 	void Start () {
       BossHP = (SharedInt)behaviorTree.GetVariable("BossHP");
       BossHP.Value = 500;
+      WarriorHP = (SharedInt)GlobalVariables.Instance.GetVariable("WarriorHP");
+      WarriorHP.Value = 200;
+      
 	}
 	
 	// Update is called once per frame

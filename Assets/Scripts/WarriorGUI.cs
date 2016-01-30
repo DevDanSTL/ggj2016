@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using BehaviorDesigner.Runtime;
 
-public class GUIUpdater : MonoBehaviour
+public class WarriorGUI : MonoBehaviour
 {
     // public static int BossHP;        // The player's score.
 
@@ -21,6 +21,6 @@ public class GUIUpdater : MonoBehaviour
     void Update ()
     {
         // Set the displayed text to be the word "Score" followed by the score value.
-        text.text = "BossHP: " + GlobalVars.BossHP.Value;
+        text.text = "HP: " + GlobalVars.WarriorHP.Value;
     }
 }
