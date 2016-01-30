@@ -569,7 +569,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 837405630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 922d3f9c4e83a40aba37e211e7236351, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fc74f3ffbb384715a0f8a0e376de48e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   initialPanel: {fileID: 836673897}
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732703302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0b1489a166dd4101b520e1dad65c0cb, type: 3}
+  m_Script: {fileID: 11500000, guid: aec68d79e3eb94073a8519ce829a6748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
@@ -1347,7 +1347,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 164544, guid: fcbcc32daf2c244b59dc642950e6d474, type: 2}
+  m_PlayerPrefab: {fileID: 164544, guid: 43c903e6b7ffa475eb8511af9a22582c, type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: MatchFinder
@@ -1381,7 +1381,7 @@ MonoBehaviour:
     m_ReactorMaximumReceivedMessages: 1024
     m_ReactorMaximumSentMessages: 1024
     m_MaxPacketSize: 2000
-  m_Channels: 0500000000000000
+  m_Channels: 
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   matchMaker: {fileID: 0}
   matchName: default
   matchSize: 4
-  playerConnectionIds: ffffffffffffffffffffffffffffffff
+  playerConnectionIds: 00000000000000000000000000000000
 --- !u!4 &1732703304
 Transform:
   m_ObjectHideFlags: 0
@@ -1711,7 +1711,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2079112885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 103b611be5d1c448888d2324c224270c, type: 3}
+  m_Script: {fileID: 11500000, guid: fa43128560a3542c8823104e3059fec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   adjectives:
@@ -1728,7 +1728,7 @@ MonoBehaviour:
   - cup
   - matchbox
   min: 1
-  max: 999
+  max: 99
 --- !u!224 &2079112887
 RectTransform:
   m_ObjectHideFlags: 0
