@@ -19,10 +19,10 @@ public int BossMAtk = 30;
 public int BossSAtk = 50;
 public int BossDef = 5;
 // public var BossTarget = null; - Using Aggro for now
-public bool Rended = false;
-public bool Taunted = false;
-public bool Frozen = false;
-public bool Burning = false;
+static public bool Rended = false;
+static public bool Taunted = false;
+static public bool Frozen = false;
+static public bool Burning = false;
 
 // Team Vars
 public bool Empowered = false;
@@ -45,9 +45,11 @@ public int ClericAggro = 0;
 // Warrior Vars
 static public SharedInt WarriorHP;
 static public int WarriorAtk = 20;
-public float OppMod = 1.5f;
+static public float WarriorCooldown = 1.5f;
+static public int OppMod = 2;
+static public int WAttack = 10;
 public bool OppAtk = false;
-public bool PShielded = false;
+static public bool PShielded = false;
 public int WarriorAggro = 0;
 
 	// Use this for initialization
