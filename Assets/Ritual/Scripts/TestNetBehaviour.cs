@@ -13,6 +13,7 @@ public class TestNetBehaviour : NetworkBehaviour {
     public override void OnStartClient()
     {
         // register client events, enable effects
-        Debug.Log("CLIENTED STARTED");
+        Debug.Log("CLIENT STARTED");
+
     }
 }
