@@ -328,3 +328,4 @@ _Pvt_Extensions
 *.resources
 test-results/
 
+launch.json
