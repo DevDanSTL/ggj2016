@@ -1392,7 +1392,7 @@ MonoBehaviour:
   matchMaker: {fileID: 0}
   matchName: default
   matchSize: 4
-  playerConnectionIds: 00000000000000000000000000000000
+  playerConnectionIds: ffffffffffffffffffffffffffffffff
 --- !u!4 &1732703304
 Transform:
   m_ObjectHideFlags: 0
