@@ -34,7 +34,7 @@ static public SharedInt MageHP;
 public int MageAtk = 5;
 public int MageAggro = 0;
 public bool MShielded = false;
-static public float MageCooldown = 3.3f;
+static public float MageCooldown = 5f;
 
 // Thief Vars
 public int ThiefHP = 75;
@@ -46,8 +46,8 @@ public int ClericAggro = 0;
 
 // Warrior Vars
 static public SharedInt WarriorHP;
-static public int WarriorAtk = 30;
-static public float WarriorCooldown = 1.5f;
+static public int WarriorAtk = 15;
+static public float WarriorCooldown = 3.3f;
 static public int OppMod = 2;
 static public int WAttack = 5;
 static public SharedInt OppAtk;

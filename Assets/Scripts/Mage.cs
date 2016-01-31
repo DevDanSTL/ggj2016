@@ -5,10 +5,6 @@ using BehaviorDesigner.Runtime;
 
 public class Mage : MonoBehaviour {
 
-//public BehaviorTree behaviorTree;
-   //behaviorTree.SetVariableValue("BossHP", value);
-    //BossHP = (SharedInt)behaviorTree.GetVariable("BossHP");
-
  public float FirCounter = 0.0f;
  public float IceCounter = 0.0f;
  public float InvisCounter = 0.0f;
@@ -28,14 +24,14 @@ public class Mage : MonoBehaviour {
   void OnGUI () {
       
       // Find the buttons
-      MagBut1 = GameObject.Find("Button");
-      MagBut2 = GameObject.Find("Button (1)");
-      MagBut3 = GameObject.Find("Button (3)");
-      MagBut4 = GameObject.Find("Button (4)");
-      MagBut5 = GameObject.Find("Button (5)");
-      MagBut6 = GameObject.Find("Button (6)");
-      MagBut7 = GameObject.Find("Button (7)");
-      MagBut8 = GameObject.Find("Button (8)");
+      MagBut1 = GameObject.Find("MButton");
+      MagBut2 = GameObject.Find("MButton (1)");
+      MagBut3 = GameObject.Find("MButton (3)");
+      MagBut4 = GameObject.Find("MButton (4)");
+      MagBut5 = GameObject.Find("MButton (5)");
+      MagBut6 = GameObject.Find("MButton (6)");
+      MagBut7 = GameObject.Find("MButton (7)");
+      MagBut8 = GameObject.Find("MButton (8)");
      
      
      // when my set time is reached

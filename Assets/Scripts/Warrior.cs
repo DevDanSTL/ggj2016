@@ -34,32 +34,6 @@ public class Warrior : MonoBehaviour {
       WarBut6 = GameObject.Find("Button (4)");
       WarBut5 = GameObject.Find("Button (5)");
      
-     
-     // when my set time is reached
-     if (AtkCounter >= GlobalVars.WarriorCooldown) {
-         // show GUI Button
-         WarBut1.GetComponent<Button> ().interactable = true;
-         }
-         
-     if (AtkCounter >= GlobalVars.WarriorCooldown) {
-         // show GUI Button
-         WarBut1.GetComponent<Button> ().interactable = true;
-         }
-         
-     WarBut6 = GameObject.Find("Button (5)");
-     // add time to counter
-     // use myCounter++; (same as myCounter+=1;) to count the frames - or
-     AtkCounter += Time.deltaTime;
-     
-     if (GlobalVars.OppAtk.Value == 1) {
-         WarBut2.GetComponent<Button> ().interactable = true;
-     }
-     
-     else
-     {
-         WarBut2.GetComponent<Button> ().interactable = false;
-     } 
-     
   }
 
 	public void Attack () {
@@ -109,5 +83,29 @@ public class Warrior : MonoBehaviour {
      // WAtkCounter = 0.0f;
       
 	}
+    
+    public void Update () {
+        
+             // when my set time is reached
+     if (AtkCounter >= GlobalVars.WarriorCooldown) {
+         // show GUI Button
+         WarBut1.GetComponent<Button> ().interactable = true;
+         }
+         
+     // add time to counter
+     // use myCounter++; (same as myCounter+=1;) to count the frames - or
+     AtkCounter += Time.deltaTime;
+     
+     if (GlobalVars.OppAtk.Value == 1) {
+         WarBut2.GetComponent<Button> ().interactable = true;
+     }
+     
+//     else
+//     {
+//         WarBut2.GetComponent<Button> ().interactable = false;
+//     } 
+        
+        
+    }
     
 }
