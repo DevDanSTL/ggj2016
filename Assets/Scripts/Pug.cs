@@ -3,19 +3,15 @@ using UnityEngine.UI;
 using System.Collections;
 using BehaviorDesigner.Runtime;
 
-public class EndUpdate : MonoBehaviour
+public class Pug : MonoBehaviour
 {
     // public static int BossHP;        // The player's score.
-
-    Text text;                      // Reference to the Text component.
+    
+    public Image imgPug;
 
     void Awake ()
     {
-        // Set up the reference.
-        text = GetComponent <Text> ();
-        
-        // Reset the score.
-        // BossHP = 0;
+
     }
 
     void Update ()
@@ -24,12 +20,11 @@ public class EndUpdate : MonoBehaviour
         
         if (GlobalVars.BossHP.Value <= 0)
         {
-            text.text = "Crushed It!";
+            
         }
         else
         {
-            text.text = "Stupid";
-            
+           imgPug.enabled = true;
         }
         
     }
