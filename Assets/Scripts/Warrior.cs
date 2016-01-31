@@ -9,7 +9,12 @@ public class Warrior : MonoBehaviour {
    //behaviorTree.SetVariableValue("BossHP", value);
     //BossHP = (SharedInt)behaviorTree.GetVariable("BossHP");
 
- public float myCounter = 0.0f;
+ public float AtkCounter = 0.0f;
+ public float ShieldCounter = 0.0f;
+ public float OpAtkCounter = 0.0f;
+ public float RendCounter = 0.0f;
+ public float WAtkCounter = 0.0f;
+ public float TauntCounter = 0.0f;
 
  // Wish I was better with arrays
  public GameObject WarBut1;
@@ -26,24 +31,42 @@ public class Warrior : MonoBehaviour {
       WarBut2 = GameObject.Find("Button (1)");
       WarBut3 = GameObject.Find("Button (2)");
       WarBut4 = GameObject.Find("Button (3)");
-      WarBut5 = GameObject.Find("Button (4)");
-      WarBut6 = GameObject.Find("Button (5)");
-      
+      WarBut6 = GameObject.Find("Button (4)");
+      WarBut5 = GameObject.Find("Button (5)");
+     
+     
      // when my set time is reached
-     if (myCounter >= GlobalVars.WarriorCooldown) {
+     if (AtkCounter >= GlobalVars.WarriorCooldown) {
          // show GUI Button
          WarBut1.GetComponent<Button> ().interactable = true;
          }
+         
+     if (AtkCounter >= GlobalVars.WarriorCooldown) {
+         // show GUI Button
+         WarBut1.GetComponent<Button> ().interactable = true;
+         }
+         
+     WarBut6 = GameObject.Find("Button (5)");
      // add time to counter
      // use myCounter++; (same as myCounter+=1;) to count the frames - or
-     myCounter += Time.deltaTime;
+     AtkCounter += Time.deltaTime;
+     
+     if (GlobalVars.OppAtk.Value == 1) {
+         WarBut2.GetComponent<Button> ().interactable = true;
+     }
+     
+     else
+     {
+         WarBut2.GetComponent<Button> ().interactable = false;
+     } 
+     
   }
 
 	public void Attack () {
      
       GlobalVars.BossHP.Value -= GlobalVars.WarriorAtk;
       WarBut1.GetComponent<Button> ().interactable = false;
-      myCounter = 0.0f;
+      AtkCounter = 0.0f;
       
 	}
     
@@ -51,7 +74,7 @@ public class Warrior : MonoBehaviour {
      
       GlobalVars.BossHP.Value -= (GlobalVars.WarriorAtk * GlobalVars.OppMod);
       WarBut2.GetComponent<Button> ().interactable = false;
-      myCounter = 0.0f;
+      OpAtkCounter = 0.0f;
       
 	}
     
@@ -59,15 +82,15 @@ public class Warrior : MonoBehaviour {
      
       GlobalVars.Rended = true;
       WarBut3.GetComponent<Button> ().interactable = false;
-      myCounter = 0.0f;
+      RendCounter = 0.0f;
       
 	}
     
     public void Shield () {
      
-      GlobalVars.PShielded = true;
-      WarBut4.GetComponent<Button> ().interactable = false;
-      myCounter = 0.0f;
+      GlobalVars.PShielded.Value = 1;
+     // WarBut4.GetComponent<Button> ().interactable = false;
+     // ShieldCounter = 0.0f;
       
 	}
     
@@ -75,17 +98,16 @@ public class Warrior : MonoBehaviour {
      
       GlobalVars.Taunted = true;
       WarBut5.GetComponent<Button> ().interactable = false;
-      myCounter = 0.0f;
+      TauntCounter = 0.0f;
       
 	}
     
     public void WAttack () {
      
       GlobalVars.BossHP.Value -= GlobalVars.WAttack;
-      WarBut6.GetComponent<Button> ().interactable = false;
-      myCounter = 0.0f;
+     // WarBut6.GetComponent<Button> ().interactable = false;
+     // WAtkCounter = 0.0f;
       
 	}
-    
     
 }

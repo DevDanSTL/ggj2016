@@ -30,10 +30,11 @@ public bool Empowered = false;
 public bool Invisible = false;
 
 // Mage Vars
-public int MageHP = 100;
+static public SharedInt MageHP;
 public int MageAtk = 5;
 public int MageAggro = 0;
 public bool MShielded = false;
+static public float MageCooldown = 3.3f;
 
 // Thief Vars
 public int ThiefHP = 75;
@@ -45,12 +46,12 @@ public int ClericAggro = 0;
 
 // Warrior Vars
 static public SharedInt WarriorHP;
-static public int WarriorAtk = 40;
+static public int WarriorAtk = 30;
 static public float WarriorCooldown = 1.5f;
 static public int OppMod = 2;
-static public int WAttack = 10;
-public bool OppAtk = false;
-static public bool PShielded = false;
+static public int WAttack = 5;
+static public SharedInt OppAtk;
+static public SharedInt PShielded;
 public int WarriorAggro = 0;
 
 	// Use this for initialization
@@ -59,6 +60,12 @@ public int WarriorAggro = 0;
       BossHP.Value = 500;
       WarriorHP = (SharedInt)GlobalVariables.Instance.GetVariable("WarriorHP");
       WarriorHP.Value = 200;
+      MageHP = (SharedInt)GlobalVariables.Instance.GetVariable("MageHP");
+      MageHP.Value = 100;
+      OppAtk = (SharedInt)behaviorTree.GetVariable("OppAtk");
+      OppAtk.Value = 0;
+      PShielded = (SharedInt)behaviorTree.GetVariable("PShielded");
+      PShielded.Value = 0;
       
 	}
 	
