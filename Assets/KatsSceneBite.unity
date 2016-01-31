@@ -1026,7 +1026,6 @@ MonoBehaviour:
   BossDef: 5
   Empowered: 0
   Invisible: 0
-  MageHP: 100
   MageAtk: 5
   MageAggro: 0
   MShielded: 0
@@ -1034,7 +1033,6 @@ MonoBehaviour:
   ThiefAggro: 0
   ClericHP: 100
   ClericAggro: 0
-  OppAtk: 0
   WarriorAggro: 0
 --- !u!4 &215522751
 Transform:
@@ -1059,7 +1057,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4797a8dd6f42349bda63c80f12782e82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCounter: 0
+  AtkCounter: 0
+  ShieldCounter: 0
+  OpAtkCounter: 0
+  RendCounter: 0
+  WAtkCounter: 0
+  TauntCounter: 0
   WarBut1: {fileID: 0}
   WarBut2: {fileID: 0}
   WarBut3: {fileID: 0}
@@ -5204,7 +5207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1357848772}
-  m_RootOrder: 11
+  m_RootOrder: 14
 --- !u!212 &1232073024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5550,10 +5553,10 @@ Transform:
   - {fileID: 1155250303}
   - {fileID: 1573639779}
   - {fileID: 821784140}
-  - {fileID: 1232073023}
   - {fileID: 1613702346}
   - {fileID: 1460099910}
   - {fileID: 1584722740}
+  - {fileID: 1232073023}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!1 &1367553648
@@ -5977,7 +5980,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1357848772}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!212 &1460099911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6669,7 +6672,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.1000003, z: 1}
   m_Children: []
   m_Father: {fileID: 1357848772}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!212 &1584722741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6727,7 +6730,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1357848772}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!212 &1613702347
 SpriteRenderer:
   m_ObjectHideFlags: 0
