@@ -4,7 +4,7 @@ using System.Collections;
 
 public class TestPlayerUI : MonoBehaviour {
 
-	static PlayerCanvas.CharacterClass targetClass;
+	static PlayerCanvas.CharacterClass targetClass = PlayerCanvas.CharacterClass.MAX;
 	public GameObject[] classPanels = new GameObject[(int)PlayerCanvas.CharacterClass.MAX];
 
 	// Use this for initialization

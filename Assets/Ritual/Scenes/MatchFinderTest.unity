@@ -1347,8 +1347,8 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 161630, guid: 6bed6b6a4d8c544a28b67236e8f271fc, type: 2}
-  m_AutoCreatePlayer: 1
+  m_PlayerPrefab: {fileID: 0}
+  m_AutoCreatePlayer: 0
   m_PlayerSpawnMethod: 0
   m_OfflineScene: MatchFinderTest
   m_OnlineScene: TestGame
@@ -1392,11 +1392,6 @@ MonoBehaviour:
   matchMaker: {fileID: 0}
   matchName: default
   matchSize: 4
-  playerPrefabs:
-  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
-  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
-  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
-  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
   classUnavailable: 00000000
   playerConnectionIds: ffffffffffffffffffffffffffffffff
 --- !u!4 &1732703304
