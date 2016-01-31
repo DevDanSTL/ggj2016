@@ -10,6 +10,7 @@ public BehaviorTree behaviorTree;
 public int BurnDamage = 5;
 public float BurnTime = 2f;
 public float FreezeMod = 1.5f;
+static public int endVar = 0;
 
 // Boss Vars
 static public SharedInt BossHP;
@@ -44,7 +45,7 @@ public int ClericAggro = 0;
 
 // Warrior Vars
 static public SharedInt WarriorHP;
-static public int WarriorAtk = 20;
+static public int WarriorAtk = 40;
 static public float WarriorCooldown = 1.5f;
 static public int OppMod = 2;
 static public int WAttack = 10;
