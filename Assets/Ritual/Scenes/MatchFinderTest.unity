@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732703302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aec68d79e3eb94073a8519ce829a6748, type: 3}
+  m_Script: {fileID: 11500000, guid: 632fc3fa9b9b84c008558c930fc8eb90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
@@ -1347,11 +1347,11 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 164544, guid: ddc2c28483978413fb2e9e9b992167f4, type: 2}
+  m_PlayerPrefab: {fileID: 161630, guid: 6bed6b6a4d8c544a28b67236e8f271fc, type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
-  m_OfflineScene: MatchFinder
-  m_OnlineScene: 3DGame
+  m_OfflineScene: MatchFinderTest
+  m_OnlineScene: TestGame
   m_SpawnPrefabs: []
   m_CustomConfig: 0
   m_MaxConnections: 4
@@ -1392,6 +1392,12 @@ MonoBehaviour:
   matchMaker: {fileID: 0}
   matchName: default
   matchSize: 4
+  playerPrefabs:
+  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
+  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
+  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
+  - {fileID: 195852, guid: 850f8be5161884485b9048c4ab3aed1d, type: 2}
+  classUnavailable: 00000000
   playerConnectionIds: ffffffffffffffffffffffffffffffff
 --- !u!4 &1732703304
 Transform:

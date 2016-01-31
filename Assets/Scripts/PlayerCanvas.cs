@@ -6,6 +6,8 @@ using System.Collections.Generic;
 
 public class PlayerCanvas: NetworkBehaviour {
 
+
+
 	public enum CharacterClass {
 		Warrior,
 		Mage,
