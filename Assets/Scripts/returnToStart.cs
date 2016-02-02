@@ -8,5 +8,13 @@ public class returnToStart : MonoBehaviour {
      
       SceneManager.LoadScene("DansTest");
       
-	}
+    }
+    
+    public void quit () {
+
+    Application.Quit(); 
+             
+    }
+      
+
 }
